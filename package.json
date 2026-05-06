@@ -1,0 +1,16 @@
+{
+  "name": "hospital-management-system",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install-all": "npm install --workspaces",
+    "dev": "concurrently \"npm --workspace backend run dev\" \"npm --workspace frontend run dev\"",
+    "start": "npm --workspace backend start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
